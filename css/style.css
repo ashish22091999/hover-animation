@@ -1,0 +1,604 @@
+*{margin: 0px;margin: 0px;font-family: sans-serif;}
+/*Box 1st CSS Start*/
+h1{text-align: center;margin-top: 5%;margin-bottom: 2%;}
+.main-box{height:500px;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin: auto;padding: 20px;}
+.main-box>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: .8s;}
+.main-box>div>p{margin:9px;font-weight: bolder;font-size: 12px;}
+
+.box-1:hover{transform: scale(1.2);}
+.box-2:hover{transform: scale(.8);}
+.box-3:hover{animation: box3 1s linear infinite;}
+@keyframes box3{
+    0%{transform: scale(1);}
+    25%{transform: scale(1.2);}
+    50%{transform: scale(1);}
+    75%{transform: scale(.8);}
+}
+.box-4:hover{animation: box4  1s linear infinite;/*transform: scale(1.1);*/}
+@keyframes box4{
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.1);}
+}
+.box-5:hover{animation: box5 linear 1s infinite;/*transform: scale(0.9);*/}
+@keyframes box5{
+    /* 50%{transform: scale(1);}
+    100%{transform: scale(0.9);} */
+    0%{transform: scale(1);}
+    25%{transform: scale(.8);}
+    50%{transform: scale(1);}
+    75%{transform: scale(0.8);}
+}
+.box-6:hover{animation: box6 0.9s;}
+@keyframes box6{
+    50%{transform: scale(0.8);}
+}
+.box-7:hover{animation: box7 0.9s;}
+@keyframes box7{
+    50%{transform: scale(1.2);}
+}
+.box-8:hover{transform: scale(1.2);transition-timing-function:cubic-bezier(0.47,2.02,0.31, -0.36);}
+.box-9:hover{transform: scale(0.8);transition-timing-function: cubic-bezier(0.47,2.02,0.31,-0.36);}
+.box-10:hover{transform: rotate(5deg);}
+.box-11:hover{transform: rotate(5deg) scale(1.2);}
+.box-12:hover{transform: translateY(-15px);}
+.box-13:hover{transform: translateY(15px);}
+.box-14:hover{animation: box14 linear 0.9s infinite;}
+@keyframes box14{
+    0%{transform: translateY(-8px);}
+    /* 25%{transform: translateY(-4px);} */
+    50%{transform: translateY(-4px);}
+    100%{transform: translateY(-8px);}
+}
+.box-15:hover{animation: box15 linear 0.9s infinite;}
+@keyframes box15{
+    0%{transform: translateY(8px);}
+    /* 25%{transform: translateY(4px);} */
+    50%{transform: translateY(4px);}
+    100%{transform: translateY(8px);}
+}
+.box-16:hover{transform: skewX(-15deg);}
+.box-17{transform-origin: 0% 100%;}
+.box-17:hover{transform: skewX(-10deg);}
+.box-18{transform-origin: 100% 0%;}
+.box-18:hover{transform: skewX(10deg)}
+.box-19:hover{animation: box19  linear 0.9s;}
+@keyframes box19{
+    /* 0%{transform: translate(15px);}
+    25%{transform: translate(-10px);}
+    50%{transform: translate(15px);}
+    100%{transform: translate(0px);} */
+    16.65%{transform: translateX(8px);}
+    33.3%{transform: translateX(-6px);}
+    49.95%{transform: translateX(4px);}
+    66.6%{transform: translateX(-2px);}
+    83.25%{transform: translateX(1px);}
+    100%{transform: translateX(0px);}
+}
+.box-20:hover{animation: box20 linear 0.8s;}
+@keyframes box20{
+    /* 0%{transform: translateY(15px);}
+    25%{transform: translateY(-10px);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(0px);} */
+    16.65%{transform: translateY(8px);}
+    33.3%{transform: translateY(-6px);}
+    49.95%{transform: translateY(4px);}
+    66.6%{transform: translateY(-2px);}
+    83.25%{transform: translateY(1px);}
+    100%{transform: translateY(0px);}
+}
+.box-21:hover{animation: box21 linear 0.8s;}
+@keyframes box21{
+    16.65%{transform: translate(8px,8px);}
+    33.3%{transform: translate(-6px,-6px);}
+    49.95%{transform: translate(4px,4px);}
+    66.6%{transform: translate(-2px,-2px);}
+    83.25%{transform: translate(1px,1px);}
+    100%{transform: translate(0px,0px);}
+}
+.box-22:hover{animation: box22 linear 0.9s;}
+@keyframes box22{
+    16.65%{transform: translate(8px,-8px);}
+    33.3%{transform: translate(-6px,6px);}
+    49.95%{transform: translate(4px,-4px);}
+    66.6%{transform: translate(-2px,2px);}
+    83.25%{transform: translate(1px,-1px);}
+    100%{transform: translate(0px,0px);}
+}
+.box-23{transform-origin: 0% 100%;}
+.box-23:hover{animation:box23 ease-in-out 0.8s ;}
+@keyframes box23{
+    /* 0%{transform: skew(-10deg) translateX(10px);}
+    25%{transform: skew(0deg) translateX(0px);}
+    50%{transform: skew(-10deg) translateX(10px);}
+    100%{transform: skew(0deg) translateX(0px);} */
+
+    16.65%{transform:skew(-12deg) ;}
+    33.3%{transform: skew(10deg) ;}
+    49.95%{transform: skew(-6deg);}
+    66.6%{transform: skew(4deg);}
+    100%{transform: skew(0deg);}
+
+
+    /* 0%{transform: skew(-10deg) ;}
+    25%{transform: skew(8deg) ;}
+    50%{transform: skew(-6deg) ;}
+    100%{transform: skew(4deg) ;} */
+}
+.box-24{transform-origin: 100% 0%;}
+.box-24:hover{animation:box24 ease-in-out 0.8s ;}
+@keyframes box24{
+    /* 0%{transform: skew(-10deg) translateX(-10px);}
+    25%{transform: skew(0deg) translateX(0px);}
+    50%{transform: skew(-10deg) translateX(-10px);}
+    100%{transform: skew(0deg) translateX(0px);} */
+
+    /* 16.65%{transform:skew(-12deg) translateX(-12px) ;}
+    33.3%{transform: skew(10deg) translateX(10px);}
+    49.95%{transform: skew(-6deg)translateX(-6px)}
+    66.6%{transform: skew(4deg) translateX(4px)}
+    translateX(-2px)}
+    100%{transform: skew(0deg) translateX(0px);} */
+
+    0%{transform: skew(-10deg) ;}
+    25%{transform: skew(8deg) ;}
+    50%{transform: skew(-6deg) ;}
+    100%{transform: skew(4deg) ;}
+}
+.box-25:hover{animation:box25 linear 0.8s;}
+@keyframes box25{
+    /* 0%{transform: skew(-20deg);}
+    25%{transform: skew(15deg);}
+    50%{transform: skew(-10deg);}
+    100%{transform: skew(5deg);} */
+
+    16.65%{transform:skew(-12deg)  ;}
+    33.3%{transform: skew(10deg) ;}
+    49.95%{transform: skew(-6deg);}
+    66.6%{transform: skew(4deg) ;}
+    100%{transform: skew(0deg);}
+}
+.box-26:hover{animation: box26 linear 0.2s infinite;}
+@keyframes box26{
+    /* 0%{transform: translate(5px,0px);}
+    25%{transform:translate(-3px,1px);}
+    50%{transform: translate(5px,0px);}
+    100%{transform:translate(-3px,1px);} */
+    50%{transform:translateX(3px) rotate(2deg);}
+    100%{transform:translateX(3px) rotate(-2deg); }
+}
+.box-27:hover{animation: box27 linear 0.5s;}
+@keyframes box27{
+    /* 0%{transform:translate(2px,0px);}
+    25%{transform:translate(-4px,1px);}
+    50%{transform: translate(2px,0px);}
+    100%{transform:translate(-4px,1px);} */
+    10%{transform: translateX(3px) rotate(-2deg);}
+    20%{transform: translateX(-3px) rotate(-2deg);}
+    30%{transform: translateX(3px) rotate(2deg);}
+    40%{transform: translateX(-3px) rotate(-2deg); }
+    50%{transform: translateX(2px) rotate(1deg);}
+    60%{transform: translateX(-2px) rotate(-1deg);}
+    70%{transform: translateX(2px) rotate(1deg);}
+    80%{transform: translateX(-2px) rotate(-1deg);}
+    90%{transform:translateX(1px) rotate(0deg);}
+    100%{transform: translateX(1px) rotate(0deg);}
+}
+.box-28:hover{transform: translateX(10px);}
+.box-29:hover{transform: translateX(-10px);}
+
+/* Box 1st CSS Ends */
+/* Box 2nd CSS Starts*/
+.main-box2{height: auto;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin:auto;padding: 20px; margin-top: 25px;margin-bottom: 25px;}
+.main-box2>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: .8s;}
+
+.main-box2>div>p{margin:9px;font-weight: bolder;font-size: 12px;z-index: 9999;}
+
+.box-30:hover{background-color: #3498db;color: white;}
+/* .box-31{transition-property: color,background-color;} */
+.box-31:hover{background-color:#3498db;color: white;animation: box31 1s linear infinite;}
+@keyframes box31{
+     50% {background-color: rgba(32, 152, 209, 0.75);}
+    }
+
+.box-32{position: relative;}
+.box-32:hover{color: white;}
+.box-32::before{height:100%;width: 0px;position: absolute;background-color: #3498db;content: "";transition:.8s ;}
+.box-32:hover::before{width: 100%;}
+
+.box-33{position: relative;}
+.box-33:hover{color: white;}
+.box-33::before{height: 100%;width: 0px;position:absolute;right:0;background-color: #3498db;content: "";transition: .8s;}
+.box-33:hover::before{width: 100%;}
+
+.box-34{position: relative;}
+.box-34:hover{color: white;}
+.box-34::before{height:0;width: 100%;position:absolute;background-color: #3498db;content: "";transition: .8s;}
+.box-34:hover::before{height: 100%;}
+
+.box-35{position: relative;}
+.box-35:hover>p{color:white;}
+.box-35::before{height:0;width:100%;position:absolute;bottom: 0;background-color: #3498db;content: "";transition: .8s;}
+.box-35:hover::before{height: 100%;}
+
+.box-36{position: relative;}
+.box-36::before{height:100%;width: 0%;position: absolute;background-color: #3498db;content:"";transition:.8s ;}
+.box-36:hover::before{width: 100%;transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);}
+
+.box-37{position: relative;}
+.box-37::before{height:100%;width: 0%;position:absolute;right: 0%; background-color: #3498db;content:"";transition:.8s ;}
+.box-37:hover::before{width: 100%;transition-timing-function:cubic-bezier(0.52, 1.64, 0.37, 0.66);}
+
+/* .box-38{position: relative;overflow: hidden;}
+.box-38::before{height: 0;width: 0%;position: absolute;background-color: #3498db;content: "";transition: .8s;}
+.box-38:hover::before{height: 100%; transition-timing-function: cubic-bezier(0.52,1.64,0.37,0.66);} */
+.box-38{position: relative;}
+.box-38::before{height:0;width: 100%;position:absolute;background-color: #3498db;content: "";transition: .8s;}
+.box-38:hover::before{height: 100%;transition-timing-function:cubic-bezier(0.52, 1.64, 0.37, 0.66);}
+
+.box-39{position: relative;}
+.box-39::before{height:0;width:100%;position:absolute;bottom: 0;background-color: #3498db;content: "";transition: .8s;}
+.box-39:hover::before{height: 100%;transition-timing-function:cubic-bezier(0.52, 1.64, .37, .66);}
+
+.box-40{position: relative;overflow: hidden;}
+.box-40::before{width: 100%;height: 100%;position: absolute;background-color: #3498db;content: "";transition: .8S;transform: scale(0);border-radius: 100%;}
+.box-40:hover::before{transform: scale(2);}
+
+.box-41{position: relative;overflow: hidden;background-color: #3498db!important;}
+.box-41::before{width:100%;height: 100%;position: absolute;content: "";transition: .5s;transform: scale(2);border-radius: 100%;background-color:gray;}
+.box-41:hover::before{transform: scale(0);background-color: #3498db;}
+
+.box-42{position: relative;overflow: hidden;background-color: #3498db!important;}
+.box-42::before{width:100%;height: 100%;position: absolute;background-color:gray;content: "";transition: .8s;transform: scale(2);}
+.box-42:hover::before{transform: scale(0);}
+
+.box-43{position: relative;overflow: hidden;}
+.box-43::before{width: 100%;height: 100%;position: absolute;background-color: #3498db;content: "";transition: .8S;transform: scale(0);}
+.box-43:hover::before{transform: scale(2);}
+
+
+.box-44{position: relative;overflow: hidden;background-color: #3498db!important;}
+.box-44::before{width: 100%;height: 100%;position:absolute;background-color:gray;content: "";transition: .8s;transform: scale(3);}
+.box-44:hover::before{transform: scaleX(0);}
+
+.box-45{position: relative;overflow: hidden;}
+.box-45::before{width: 100%;height: 100%;position: absolute;background-color:#3498db;content: "";transition: .8s;transform: scaleX(0);}
+.box-45:hover::before{transform: scaleY(3);}
+
+.box-46{position: relative;overflow: hidden;background-color: #3498db!important;}
+.box-46::before{width: 100%;height: 100%;position:absolute;background-color:gray;content: "";transition: .8s;transform: scale(3);}
+.box-46:hover::before{transform: scaleY(0);}
+
+.box-47{position: relative;overflow: hidden;}
+.box-47::before{width:100%;height: 100%;position: absolute;background-color: #3498db;content: "";transition: .8s;transform: scaleY(0);}
+.box-47:hover::before{transform: scaleX(3);}
+
+
+/* Box 2nd CSS Ends*/
+/*Box 3rd CSS Starts*/
+.main-box3{height: auto;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin:auto;padding: 20px; margin-top: 25px;margin-bottom: 25px;}
+.main-box3>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: .8s;}
+.main-box3>div>p{margin:9px;font-weight: bolder;font-size: 9px;z-index: 9999;}
+.main-box3>div>i{color:#2c3e50;margin: 8px 0px 0px 20px;transition: 0.8s;}
+
+.box-48:hover>i{transform: translateX(-8px);}
+.box-49:hover>i{transform: translateX(8px);}
+.box-50:hover>i{animation: box50 linear 0.8s;}
+@keyframes box50{
+    /* 0%{transform: translateY(15px);}
+    25%{transform: translateY(-10px);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(0px);} */
+    /* 16.65%{transform: translateY(8px);}
+    33.3%{transform: translateY(-6px);}
+    49.95%{transform: translateY(4px);}
+    66.6%{transform: translateY(-2px);}
+    83.25%{transform: translateY(1px);}
+    100%{transform: translateY(0px);} */
+
+    0%{transform: translateY(6px);}
+    25%{transform: translateY(-4px);}
+    50%{transform: translateY(2px);}
+    75%{transform: translateY(-1px);}
+    100%{transform: translateY(0px);}
+
+}
+.box-51:hover>i{animation: box51 linear 0.8s;}
+@keyframes box51{
+    0%{transform: translateY(-6px);}
+    25%{transform: translateY(4px);}
+    50%{transform: translateY(-2px);}
+    75%{transform: translateY(1px);}
+    100%{transform: translateY(0px);}
+}
+
+.box-52:hover>i{transform: rotate(360deg);}
+
+
+.box-53:hover>i{animation: box53 0.8s linear;}
+@keyframes box53{
+    0%{opacity: 0;}
+    50%{opacity: 0;transform: translateY(-100%);}
+    51%{opacity: 1;}
+}
+
+.box-54:hover>i{color:yellow;}
+
+.box-55:hover>i{animation: box55 0.8s linear;opacity: 0;}
+@keyframes box55{
+    0%{opacity: 1;}
+    100%{transform: translateY(-1em);}
+}
+.box-55>i:hover::after{transform: scaleY(0);}
+
+.box-56:hover>i{animation: box56 0.8s linear;opacity: 0;}
+@keyframes box56{
+    0%{opacity: 1;}
+    100%{transform: translateY(1em);}
+}
+
+
+
+
+.box-57:hover>i{transform: scale(1.2);}
+.box-58:hover>i{transform: scale(0.8);}
+.box-59:hover>i{animation: box59 0.8s linear infinite;}
+@keyframes box59{
+    0%{transform: scale(1);}
+    25%{transform: scale(1.2);}
+    50%{transform: scale(1);}
+    75%{transform: scale(0.8);}
+}
+.box-60:hover>i{animation: box60 0.8s linear infinite;}
+@keyframes box60 {
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.1);}
+}
+.box-61:hover>i{animation: box61 .8s  linear infinite ;}
+@keyframes box61{
+    0%{transform: scale(1);}
+    25%{transform: scale(0.8);}
+    50%{transform: scale(1);}
+    75%{transform: scale(0.8);}
+}
+.box-62:hover>i{animation: box62 .8s linear;}
+@keyframes box62{
+    50%{transform: scale(0.8);}
+}
+.box-63:hover>i{animation: box63 .8s linear;}
+@keyframes box63{
+    50%{transform: scale(1.2);}
+}
+.box-64:hover>i{transform: scale(1.2);transition-timing-function:cubic-bezier(0.47,2.02,0.31, -0.36);}
+.box-65:hover>i{transform: rotate(8deg);}
+.box-66:hover>i{transform: rotate(5deg) scale(1.2);}
+.box-67:hover>i{transform: translateY(-8px);}
+.box-68:hover>i{transform: translateY(8px);}
+.box-69:hover>i{animation: box68 linear 0.9s infinite;}
+@keyframes box68{
+    0%{transform: translateY(-8px);}
+    50%{transform: translateY(-4px);}
+    100%{transform: translateY(-8px);}
+}
+.box-70:hover>i{animation: box70 linear 0.9s infinite;}
+@keyframes box70{
+    0%{transform: translateY(8px);}
+    50%{transform: translateY(4px);}
+    100%{transform: translateY(8px);}
+}
+.box-71:hover>i{animation: box71  linear 0.9s;}
+@keyframes box71{
+    16.65%{transform: translateX(8px);}
+    33.3%{transform: translateX(-6px);}
+    49.95%{transform: translateX(4px);}
+    66.6%{transform: translateX(-2px);}
+    83.25%{transform: translateX(1px);}
+    100%{transform: translateX(0px);}
+}
+.box-72:hover>i{animation: box72 linear 0.8s;}
+@keyframes box72{
+    16.65%{transform: translateY(8px);}
+    33.3%{transform: translateY(-6px);}
+    49.95%{transform: translateY(4px);}
+    66.6%{transform: translateY(-2px);}
+    83.25%{transform: translateY(1px);}
+    100%{transform: translateY(0px);}
+}
+.box-73:hover>i{animation: box73 linear 0.2s infinite;}
+@keyframes box73{
+   
+    50%{transform:translateX(3px) rotate(2deg);}
+    100%{transform:translateX(3px) rotate(-2deg); }
+}
+.box-74:hover>i{animation: box74 linear 0.5s;}
+@keyframes box74{
+   
+    10%{transform: translateX(3px) rotate(-2deg);}
+    20%{transform: translateX(-3px) rotate(-2deg);}
+    30%{transform: translateX(3px) rotate(2deg);}
+    40%{transform: translateX(-3px) rotate(-2deg); }
+    50%{transform: translateX(2px) rotate(1deg);}
+    60%{transform: translateX(-2px) rotate(-1deg);}
+    70%{transform: translateX(2px) rotate(1deg);}
+    80%{transform: translateX(-2px) rotate(-1deg);}
+    90%{transform:translateX(1px) rotate(0deg);}
+    100%{transform: translateX(1px) rotate(0deg);}
+}
+/*Box 3rd CSS Ends*/
+/* Box 4th Css Starts */
+.main-box4{height: auto;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin:auto;padding: 20px; margin-top: 25px;margin-bottom: 25px;}
+.main-box4>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: 0.8s;}
+.main-box4>div>p{margin:9px;font-weight: bolder;font-size: 12px;z-index: 9999;}
+
+.box-75:hover{box-shadow: inset 0 0 0 5px #2098d1;}
+.box-76:hover{background-color:whitesmoke;box-shadow: inset 0 0 0 5px gray;}
+.box-77{position: relative;}
+.box-77::before{position:absolute;border: 4px white solid ;top: 4px;left: 4px;right: 4px;bottom: 4px; content: "";opacity: 0;}
+.box-77:hover::before{opacity: 1;}
+
+.box-78{position: relative;}
+.box-78::before{height:100%;width: 100%;position: absolute;top: 0px;right: 0px;bottom: 0px;left: 0px; content: "";transition:.8s ;opacity:1 ;}
+.box-78:hover::before{opacity: 0; box-shadow:  2px 1px 0px 10px gray;}
+
+.box-79{position: relative;}
+.box-79::before{height:100%;width: 100%;position: absolute;top: 0px;right: 0px;bottom: 0px;left: 0px; content: "";transition:.8s ;opacity:1 ;transform: scale(1.2);}
+.box-79:hover::before{opacity: 0; box-shadow:  2px 1px 0px 10px gray;transform: scale(1);}
+
+.box-80{position: relative;}
+.box-80::before{height:100%;width: 100%;position: absolute;top: -7px;right: -16px;bottom: -16px;left: -5px; border: lightgray solid 5px; content: "";transition:.8s ;opacity: 0;}
+.box-80:hover::before{top: -6px;bottom: -8px;right: -8px;left: -6px;opacity: 1;outline: gray solid 5px;}
+
+.box-81{position: relative;}
+.box-81::before{height:100%;width: 100%;position: absolute;top: -6px;bottom: -8px;right: -8px;left: -6px; border: lightgray solid 5px; content: "";transition:.8s ;opacity: 0;transform: scale(1.2);}
+.box-81:hover::before{transform: scale(1); opacity: 1;outline: gray solid 5px;}
+
+.box-82:hover{border-radius: 15px;transition: 0.8s;}
+
+.box-83{position: relative;}
+.box-83::before{height:100%;width: 0px;position: absolute;box-shadow:inset 0px -10px 0px 0px  #2098d1;content: "";transition:.8s ;}
+.box-83:hover::before{width: 100%;}
+
+.box-84{position: relative;overflow: hidden;}
+.box-84::before{width: 100%;height: 100%;position: absolute;top: 0; box-shadow:inset 0px -10px 0px 0px  #2098d1;  content: "";transition: .8s;transform: scaleX(0);}
+.box-84:hover::before{transform: scaleX(3);}
+
+.box-85{position: relative;}
+.box-85::before{height: 100%;width: 0px;position:absolute;right:0;box-shadow:inset 0px -10px 0px 0px  #2098d1; content: "";transition: .8s;}
+.box-85:hover::before{width: 100%;}
+
+.box-86{position: relative;}
+.box-86::before{position:absolute;border-color: #2098d1;border-style: solid; content: "";transition: .8s;z-index: -1;width: 92%;height: 90%;}
+.box-86:hover::before{transform: translateY(0);border-width: 4px;z-index: 1;}
+
+.box-87{position: relative;}
+.box-87::before{height:0;width:100%;position:absolute;bottom: 0;box-shadow:inset 0px -10px 0px 0px  #2098d1; content: "";transition: .8s;}
+.box-87:hover::before{height: 100%;}
+
+.box-88{position: relative;}
+.box-88::before{height:0;width: 100%;position:absolute;box-shadow:inset 0px -10px 0px 0px  #2098d1; content: "";transition: .8s;}
+.box-88:hover::before{height: 15%;}
+
+.box-89{position: relative;}
+.box-89::before{height:-100%;width: 0px;position: absolute; box-shadow:inset 0px -10px 0px 0px  #2098d1;content: "";transition:.8s ;}
+.box-89:hover::before{width: 100%;height: 20%;}
+
+.box-90{position: relative;overflow: hidden;}
+.box-90::before{width: 100%;height: 10%;position: absolute; box-shadow:inset 0px 10px 0px 0px  #2098d1;content: "";transition: .8s;transform: scaleX(0);}
+.box-90:hover::before{transform: scaleY(3);}
+
+.box-91{position: relative;}
+.box-91::before{height: -100%;width: 0px;position:absolute;right:0;box-shadow:inset 0px -10px 0px 0px  #2098d1; content: "";transition: .8s;}
+.box-91:hover::before{width: 100%;height: 15%;}
+/* Box 4th Css Ends */
+/* BoX 5th Css Starts*/
+
+.main-box5{height: auto;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin:auto;padding: 20px; margin-top: 25px;margin-bottom: 25px;}
+.main-box5>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: 0.8s;}
+.main-box5>div>p{margin:9px;font-weight: bolder;font-size: 12px;z-index: 9999;}
+
+.box-92:hover{box-shadow: 0px 18px 10px -15px #111;}
+.box-93:hover{transform: scale(1.2);box-shadow: 0px 18px 10px -15px #111;}
+/* .box-94:hover{margin-top: 5px;box-shadow: 0px 20px 20px red;}
+.box-94::before{transform: translateY(-5px);} */
+/* .box-94:{position: relative;}
+.box-94:hover::before{opacity: 1;transform: translateY(-15px);}
+.box-94::before{position: absolute;z-index: -1;content: "";top: 100%;left: 5%;height: 10%;width: 90%;opacity: 0;box-shadow: 3px 3px 3px red ;} */
+
+/* 
+.box-94:{position: relative;box-shadow: #2098d1 0 0 0 1px ;}
+.box-94:hover{transform: translateY(-5px);}
+.box-94:hover::before{position: absolute;top: 65px; right: 21px;left: 21px;bottom: 0px; box-shadow:gray 2px 7px 20px 7px;content: "";} */
+
+.box-94:hover{transform: translateY(-5px);}
+.box-94{position: relative;}
+.box-94:hover::before{opacity: 1;transform: translateY(5px);}
+.box-94::before{position: absolute;content:"";top: 100%;left: 5%;height: 10px;width: 90%;opacity: 0;background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);}
+
+
+
+.box-95:hover{transform: scale(1.1);box-shadow: 0px 0px 10px 5px gray;}
+/* 
+.box-96{position: relative;}
+.box-96:hover::before{opacity: 1;}
+.box-96::before{bottom: 100%;background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);} */
+
+/* .box-96:{position: relative;box-shadow:#2098d1 0 0 0 1px;}
+.box-96:hover{}
+.box-96:hover:before{opacity: 1;}
+.box-96::before{bottom: 100%;background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);}
+.box-96::before{position: absolute;content: "";left: 0;width: 100%;box-sizing: border-box;height: 5px;background: no-repeat;opacity: 0;} */
+
+.box-96{position: relative;}
+.box-96:hover::before{opacity: 1;}
+.box-96::before{position: absolute;content:"";top: 96%;left: 0%;right: 0%; height: 7px;width: 100%;opacity: 0;background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45) 31%, rgba(0, 0, 0, 0) 88%);}
+.box-96:hover::after{opacity: 1;}
+.box-96::after{position: absolute;content:"";top: -10%;left: 0%;right: 0%; height: 7px;width: 100%;opacity: 0;background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45) 31%, rgba(0, 0, 0, 0) 88%);}
+.box-97:hover{box-shadow: 2px 2px 2px black;}
+.box-98:hover{box-shadow: inset 2px 2px 2px black;}
+/* Box 5th Css Ends */
+/* Box 6th Css Starts*/
+.main-box6{height: auto;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin:auto;padding: 20px; margin-top: 25px;margin-bottom: 25px;}
+.main-box6>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: 0.8s;}
+.main-box6>div>p{margin:9px;font-weight: bolder;font-size: 12px;z-index: 9999;}
+
+.box-99{position: relative;}
+.box-99:hover::before{transform: translateY(-10px);}
+.box-99::before{position: absolute;left: 40%;top: 0;border-width: 0 10px 10px 10px; content: "";border-style: solid;border-color: transparent transparent gray transparent;transition: 0.8s;}
+
+.box-100{position: relative;}
+.box-100:hover::before{transform: translateX(10px);}
+.box-100::before{position: absolute;top: 30%;right:1px; border-width: 10px 0px 10px 10px; content: "";border-style: solid;border-color: transparent transparent transparent gray;transition: 0.8s;}
+
+.box-101{position: relative;}
+.box-101:hover::before{transform: translateY(10px);}
+.box-101::before{position: absolute;top:80%;right:40%; border-width: 10px 10px 0px 10px; content: "";border-style: solid;border-color:gray transparent transparent transparent ;transition: 0.8s;}
+
+.box-102{position: relative;}
+.box-102:hover::before{transform: translateX(-10px);}
+.box-102::before{position: absolute;top: 30%;right:91%; border-width: 10px 10px 10px 0px; content: "";border-style: solid;border-color: transparent  gray transparent transparent ;transition: 0.8s;}
+
+.box-103{position: relative;}
+.box-103:hover{transform: translateY(10px);}
+.box-103:hover::before{transform: translateY(-10px);}
+.box-103::before{position: absolute;left: 40%;top: 0;border-width: 0 10px 10px 10px; content: "";border-style: solid;border-color: transparent transparent gray transparent;transition: 0.8s;}
+
+.box-104{position: relative;}
+.box-104:hover{transform: translateX(-10px);}
+.box-104:hover::before{transform: translateX(10px);}
+.box-104::before{position: absolute;top: 30%;right:1px; border-width: 10px 0px 10px 10px; content: "";border-style: solid;border-color: transparent transparent transparent gray;transition: 0.8s;}
+
+.box-105{position: relative;}
+.box-105:hover{transform: translateY(-10px);}
+.box-105:hover::before{transform: translateY(10px);}
+.box-105::before{position: absolute;top:80%;right:40%; border-width: 10px 10px 0px 10px; content: "";border-style: solid;border-color:gray transparent transparent transparent ;transition: 0.8s;}
+
+.box-106{position: relative;}
+.box-106:hover{transform: translateX(10px);}
+.box-106:hover::before{transform: translateX(-10px);}
+.box-106::before{position: absolute;top: 30%;right:90%; border-width: 10px 10px 10px 0px; content: "";border-style: solid;border-color: transparent  gray transparent transparent ;transition: 0.8s;}
+
+/*Box 6th Css Ends */
+/* Box 7th Css Starts*/
+.main-box7{height: auto;width: 50.8%;background-color: lightgray;display: flex;flex-wrap: wrap;margin:auto;padding: 20px; margin-top: 25px;margin-bottom: 25px;}
+.main-box7>div{height: 50px;width: 100px;background-color: gray;margin: 15px;transition: 0.8s;}
+.main-box7>div>p{margin:9px;font-weight: bolder;font-size: 12px;z-index: 9999;}
+
+.box-107{position: relative;overflow: hidden;}
+.box-107:hover::before{transform: translate(0%,0%);}
+.box-107::before{width: 25px;height: 25px;position: absolute;top: 0;left: 0; content: "";background: linear-gradient(135deg, lightgray 45%, #aaa 50%, #ccc 56%, lightgray 80%);    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);transform: translate(-100%,-100%);transition: 0.8s;}
+
+.box-108{position: relative;overflow: hidden;}
+.box-108:hover::before{transform: translate(0%,0%);}
+.box-108::before{width: 25px;height: 25px;position: absolute;top: 0;right: 0px; content: "";background: linear-gradient(225deg, lightgray 45%, #aaa 50%, #ccc 56%, lightgray 80%);transition: 0.8s;transform: translate(100%,-100%);}
+
+.box-109{position: relative;overflow: hidden;}
+.box-109:hover::before{transform:translate(0%,0%);}
+.box-109::before{width: 25px;height: 25px;position: absolute;bottom:0;right: 0; content: "";background: linear-gradient(315deg, lightgray 45%, #aaa 50%, #ccc 56%, lightgray   80%);box-shadow: -1px -1px 1px rgb(0 0 0 / 40%);transform:translate(100%,100%);transition: .3s;}
+
+.box-110{position: relative;overflow: hidden;}
+.box-110:hover::before{transform:translate(0%,0%);}
+.box-110::before{width: 25px;height: 25px; position: absolute;bottom:0; left: 0; content: "";background: linear-gradient(405deg, lightgray 45%, #aaa 50%, #ccc 56%, lightgray 80%);box-shadow: 1px -1px -1px rgb(0 0 0 / 40%);transform: translate(-100%,100%);transition: 0.8s;}
